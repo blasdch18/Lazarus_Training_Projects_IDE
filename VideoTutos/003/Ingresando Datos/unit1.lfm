@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 567
+  Height = 248
+  Top = 383
+  Width = 439
+  Caption = 'Form1'
+  ClientHeight = 248
+  ClientWidth = 439
+  LCLVersion = '2.0.12.0'
+  object FloatSpinEdit1: TFloatSpinEdit
+    Left = 192
+    Height = 33
+    Top = 56
+    Width = 185
+    MaxValue = 1000
+    MinValue = -1000
+    OnChange = FloatSpinEdit1Change
+    TabOrder = 0
+  end
+  object FloatSpinEdit2: TFloatSpinEdit
+    Left = 192
+    Height = 33
+    Top = 96
+    Width = 185
+    MaxValue = 1000
+    MinValue = -1000
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 15
+    Top = 64
+    Width = 66
+    Caption = 'Numero 1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 15
+    Top = 104
+    Width = 66
+    Caption = 'Numero 2'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 15
+    Top = 16
+    Width = 162
+    Caption = ' Calculadora Basica  v1.0'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 48
+    Height = 47
+    Top = 136
+    Width = 328
+    Caption = 'Sumar Numeros'
+    OnClick = ProcesoSumarNumeros
+    TabOrder = 2
+  end
+  object MostrarResultado: TLabel
+    Left = 48
+    Height = 1
+    Top = 208
+    Width = 1
+    Font.Height = -21
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+end
