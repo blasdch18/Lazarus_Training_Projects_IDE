@@ -1,0 +1,97 @@
+object Form1: TForm1
+  Left = 983
+  Height = 482
+  Top = 216
+  Width = 569
+  Caption = 'Cronometro'
+  ClientHeight = 482
+  ClientWidth = 569
+  Position = poScreenCenter
+  LCLVersion = '2.0.12.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 105
+    Top = 0
+    Width = 569
+    Align = alTop
+    Caption = 'Cronometro'
+    ClientHeight = 87
+    ClientWidth = 567
+    TabOrder = 0
+    object Cronometro_idx: TLabel
+      Left = 0
+      Height = 87
+      Top = 0
+      Width = 384
+      Align = alLeft
+      Caption = '00 : 00 : 00'
+      Font.Height = -53
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Miliseconds_idx: TLabel
+      Left = 432
+      Height = 87
+      Top = 0
+      Width = 135
+      Align = alRight
+      Caption = '000'
+      Font.Height = -75
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Height = 105
+    Top = 105
+    Width = 569
+    Align = alTop
+    Caption = 'Controls'
+    ClientHeight = 87
+    ClientWidth = 567
+    TabOrder = 1
+    object Start: TSpeedButton
+      Left = 0
+      Height = 87
+      Top = 0
+      Width = 156
+      Align = alLeft
+      Caption = 'Start'
+      OnClick = StarCrono
+    end
+    object Stop: TSpeedButton
+      Left = 156
+      Height = 87
+      Top = 0
+      Width = 255
+      Align = alClient
+      Caption = 'Stop'
+      OnClick = StopClick
+    end
+    object Restart: TSpeedButton
+      Left = 411
+      Height = 87
+      Top = 0
+      Width = 156
+      Align = alRight
+      Caption = 'Restart'
+      OnClick = RestartClick
+    end
+  end
+  object Cronometro: TTimer
+    OnTimer = crono
+    Left = 232
+    Top = 256
+  end
+  object Miliseconds: TTimer
+    Interval = 10
+    OnTimer = MIliSecondsDoing
+    Left = 208
+    Top = 336
+  end
+end
