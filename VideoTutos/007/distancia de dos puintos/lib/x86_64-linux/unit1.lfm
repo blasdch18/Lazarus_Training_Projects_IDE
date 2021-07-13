@@ -1,0 +1,131 @@
+object Form1: TForm1
+  Left = 481
+  Height = 477
+  Top = 308
+  Width = 541
+  Caption = 'Calculo de la distancia entre dos puntos'
+  ClientHeight = 477
+  ClientWidth = 541
+  Position = poScreenCenter
+  LCLVersion = '2.0.12.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 477
+    Top = 0
+    Width = 232
+    Align = alLeft
+    Caption = 'Informacion de los puntos'
+    ClientHeight = 457
+    ClientWidth = 230
+    Font.Height = -16
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 0
+      Height = 23
+      Top = 0
+      Width = 230
+      Align = alTop
+      Caption = 'x1'
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 0
+      Height = 23
+      Top = 59
+      Width = 230
+      Align = alTop
+      Caption = 'y1'
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 0
+      Height = 23
+      Top = 118
+      Width = 230
+      Align = alTop
+      Caption = 'x2'
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 0
+      Height = 23
+      Top = 177
+      Width = 230
+      Align = alTop
+      Caption = 'y2'
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object FloatSpinEdit1: TFloatSpinEdit
+      Left = 0
+      Height = 36
+      Top = 23
+      Width = 230
+      Align = alTop
+      TabOrder = 0
+    end
+    object FloatSpinEdit2: TFloatSpinEdit
+      Left = 0
+      Height = 36
+      Top = 200
+      Width = 230
+      Align = alTop
+      TabOrder = 3
+    end
+    object FloatSpinEdit3: TFloatSpinEdit
+      Left = 0
+      Height = 36
+      Top = 141
+      Width = 230
+      Align = alTop
+      TabOrder = 1
+    end
+    object FloatSpinEdit4: TFloatSpinEdit
+      Left = 0
+      Height = 36
+      Top = 82
+      Width = 230
+      Align = alTop
+      TabOrder = 2
+    end
+    object Button1: TButton
+      Left = 10
+      Height = 58
+      Top = 389
+      Width = 210
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Calcular distancia'
+      OnClick = CalcularDistancia
+      TabOrder = 4
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 232
+    Height = 477
+    Top = 0
+    Width = 8
+    OnCanOffset = Splitter1CanOffset
+  end
+  object Resultados: TTreeView
+    Left = 240
+    Height = 477
+    Top = 0
+    Width = 301
+    Align = alClient
+    TabOrder = 2
+  end
+end
