@@ -1,0 +1,168 @@
+object Graficador: TGraficador
+  Left = 352
+  Height = 408
+  Top = 591
+  Width = 736
+  ClientHeight = 383
+  ClientWidth = 736
+  Menu = MainMenu1
+  LCLVersion = '2.0.12.0'
+  object Datos: TGroupBox
+    Left = 0
+    Height = 383
+    Top = 0
+    Width = 216
+    Align = alLeft
+    Caption = 'Datos'
+    ClientHeight = 365
+    ClientWidth = 214
+    TabOrder = 0
+    object celdas: TStringGrid
+      Left = 0
+      Height = 203
+      Top = 0
+      Width = 214
+      Align = alTop
+      AutoAdvance = aaDown
+      AutoFillColumns = True
+      ColCount = 1
+      FixedCols = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goAutoAddRows, goAlwaysShowEditor, goSmoothScroll]
+      TabOrder = 0
+      OnEditingDone = EditingDone
+      ColWidths = (
+        212
+      )
+    end
+  end
+  object Graficos_Estadisticos: TGroupBox
+    Left = 216
+    Height = 383
+    Top = 0
+    Width = 520
+    Align = alClient
+    Caption = 'Graficos_Estadisticos'
+    ClientHeight = 365
+    ClientWidth = 518
+    TabOrder = 1
+    object Chart1: TChart
+      Left = 0
+      Height = 365
+      Top = 0
+      Width = 518
+      AxisList = <      
+        item
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Title.LabelFont.Orientation = 900
+          Title.LabelBrush.Style = bsClear
+        end      
+        item
+          Alignment = calBottom
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Title.LabelBrush.Style = bsClear
+        end>
+      Foot.Brush.Color = clBtnFace
+      Foot.Font.Color = clBlue
+      Title.Brush.Color = clBtnFace
+      Title.Font.Color = clBlue
+      Title.Text.Strings = (
+        'TAChart'
+      )
+      Align = alClient
+      object GraficoLineal: TLineSeries
+      end
+      object GraficoArea: TAreaSeries
+      end
+      object GraficoSeries: TBarSeries
+        BarBrush.Color = clRed
+      end
+      object GraficoPie: TPieSeries
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 159
+    Top = 293
+    object Archivo: TMenuItem
+      Caption = 'Archivo'
+      object Abrir: TMenuItem
+        Caption = 'Abrir'
+        OnClick = LoadFile
+      end
+      object Guardar: TMenuItem
+        Caption = 'Guardar'
+        OnClick = SaveFile
+      end
+      object a_: TMenuItem
+        Caption = '--------'
+      end
+      object Salir: TMenuItem
+        Caption = 'Salir'
+        OnClick = CloseProgram
+      end
+    end
+    object Editar: TMenuItem
+      Caption = 'Editar'
+      object CambiarColor: TMenuItem
+        Caption = 'Cambiar color de Grafica'
+        OnClick = Colorear
+      end
+    end
+    object Graficos: TMenuItem
+      Caption = 'Graficos'
+      object Gbarras: TMenuItem
+        Caption = 'Grafica de barras'
+        Checked = True
+        OnClick = BarrasClick
+      end
+      object GLineal: TMenuItem
+        Caption = 'Grafica Lineal'
+        OnClick = LinealClick
+      end
+      object Garea: TMenuItem
+        Caption = 'Grafica de Area'
+        OnClick = AreaClick
+      end
+      object Gpastel: TMenuItem
+        Caption = 'Grafica de Pastel'
+        OnClick = PastelClick
+      end
+    end
+    object Acerca: TMenuItem
+      Caption = 'Acerca'
+      object Autor: TMenuItem
+        Caption = 'Autor ...'
+        OnClick = MostrarAutor
+      end
+    end
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 72
+    Top = 321
+  end
+end
