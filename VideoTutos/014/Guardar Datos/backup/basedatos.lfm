@@ -1,0 +1,60 @@
+object Form_BaseDatos: TForm_BaseDatos
+  Left = 171
+  Height = 600
+  Top = 388
+  Width = 800
+  Caption = 'Base de Datos del Supermercado'
+  ClientHeight = 575
+  ClientWidth = 800
+  Constraints.MinHeight = 600
+  Constraints.MinWidth = 800
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object lv_tabla: TListView
+    Left = 0
+    Height = 575
+    Top = 0
+    Width = 800
+    Align = alClient
+    Columns = <    
+      item
+      end    
+      item
+        Caption = 'ID'
+      end    
+      item
+        Caption = 'Nombre'
+        Width = 200
+      end    
+      item
+        Caption = 'Precio'
+        Width = 100
+      end    
+      item
+        Caption = 'Codigo'
+        Width = 385
+      end>
+    GridLines = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object MainMenu1: TMainMenu
+    Left = 563
+    Top = 179
+    object Archivo: TMenuItem
+      Caption = 'Archivo'
+    end
+    object Registro: TMenuItem
+      Caption = 'Registro'
+      object registroProd: TMenuItem
+        Caption = 'Registro de Producto'
+        OnClick = registroProdClick
+      end
+    end
+    object Acerca: TMenuItem
+      Caption = 'Acerca de ..'
+    end
+  end
+end
