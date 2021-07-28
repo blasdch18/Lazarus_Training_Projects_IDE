@@ -1,0 +1,20 @@
+object RegistrosForm: TRegistrosForm
+  Left = 426
+  Height = 240
+  Top = 164
+  Width = 645
+  Caption = 'RegistrosForm'
+  Menu = MenuPrincipal
+  LCLVersion = '2.0.12.0'
+  object MenuPrincipal: TMainMenu
+    Left = 287
+    Top = 70
+    object Registro: TMenuItem
+      Caption = 'Registro'
+      object IngresarEstudiantesSM: TMenuItem
+        Caption = 'Ingresar Estudiantes'
+        OnClick = IngresarEstudiantesSMClick
+      end
+    end
+  end
+end

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="25"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RegistrosForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="66"/>
+        <CursorPos X="30" Y="101"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="registros.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RegistroEstudiantesForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="5" Y="86"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="18" HistoryIndex="17">
+      <Position1>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="34" TopLine="7"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="38" Column="53" TopLine="7"/>
+      </Position2>
+      <Position3>
+        <Filename Value="registros.pas"/>
+        <Caret Line="52" Column="12" TopLine="17"/>
+      </Position3>
+      <Position4>
+        <Filename Value="registros.pas"/>
+        <Caret Line="51" Column="12" TopLine="17"/>
+      </Position4>
+      <Position5>
+        <Filename Value="registros.pas"/>
+        <Caret Line="53" Column="12" TopLine="18"/>
+      </Position5>
+      <Position6>
+        <Filename Value="registros.pas"/>
+        <Caret Line="63" Column="21" TopLine="31"/>
+      </Position6>
+      <Position7>
+        <Filename Value="registros.pas"/>
+        <Caret Line="48" Column="10" TopLine="30"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="45" Column="37" TopLine="14"/>
+      </Position8>
+      <Position9>
+        <Filename Value="registros.pas"/>
+        <Caret Line="35" Column="39" TopLine="16"/>
+      </Position9>
+      <Position10>
+        <Filename Value="registros.pas"/>
+        <Caret Line="83" Column="27" TopLine="51"/>
+      </Position10>
+      <Position11>
+        <Filename Value="registros.pas"/>
+        <Caret Line="24" Column="20" TopLine="5"/>
+      </Position11>
+      <Position12>
+        <Filename Value="registros.pas"/>
+        <Caret Line="86" Column="5" TopLine="52"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="36" Column="41" TopLine="15"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="59" Column="42" TopLine="28"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="40" Column="9" TopLine="22"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="58" Column="12" TopLine="31"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="48" Column="30" TopLine="31"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unit_main.pas"/>
+        <Caret Line="26" Column="45" TopLine="12"/>
+      </Position18>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

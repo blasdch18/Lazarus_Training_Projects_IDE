@@ -1,0 +1,116 @@
+object RegistroEstudiantesForm: TRegistroEstudiantesForm
+  Left = 1205
+  Height = 417
+  Top = 190
+  Width = 556
+  Caption = 'Registro de Estudiantes'
+  ClientHeight = 417
+  ClientWidth = 556
+  LCLVersion = '2.0.12.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 80
+    Top = 0
+    Width = 556
+    Align = alTop
+    Caption = 'Nombre'
+    ClientHeight = 62
+    ClientWidth = 554
+    TabOrder = 0
+    object e_nombre: TEdit
+      Left = 5
+      Height = 52
+      Top = 5
+      Width = 544
+      Align = alClient
+      BorderSpacing.Around = 5
+      TabOrder = 0
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Height = 80
+    Top = 80
+    Width = 556
+    Align = alTop
+    Caption = 'Codigo'
+    ClientHeight = 62
+    ClientWidth = 554
+    TabOrder = 1
+    object e_codigo: TEdit
+      Left = 5
+      Height = 52
+      Top = 5
+      Width = 544
+      Align = alClient
+      BorderSpacing.Around = 5
+      TabOrder = 0
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 0
+    Height = 80
+    Top = 160
+    Width = 556
+    Align = alTop
+    Caption = 'Grado'
+    ClientHeight = 62
+    ClientWidth = 554
+    TabOrder = 2
+    object e_grado: TEdit
+      Left = 5
+      Height = 52
+      Top = 5
+      Width = 544
+      Align = alClient
+      BorderSpacing.Around = 5
+      TabOrder = 0
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 0
+    Height = 80
+    Top = 240
+    Width = 556
+    Align = alTop
+    Caption = 'Genero'
+    ClientHeight = 62
+    ClientWidth = 554
+    TabOrder = 3
+    object cb_genero: TComboBox
+      Left = 0
+      Height = 62
+      Top = 0
+      Width = 554
+      Align = alClient
+      ItemHeight = 0
+      Items.Strings = (
+        'Masculino'
+        'Femenino'
+      )
+      TabOrder = 0
+      Text = 'Genero'
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 97
+    Top = 320
+    Width = 556
+    Align = alClient
+    ClientHeight = 97
+    ClientWidth = 556
+    TabOrder = 4
+    object insertarBt: TButton
+      Left = 470
+      Height = 75
+      Top = 11
+      Width = 75
+      Align = alRight
+      BorderSpacing.Around = 10
+      Caption = 'Insertar'
+      OnClick = insertarBtClick
+      TabOrder = 0
+    end
+  end
+end

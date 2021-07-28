@@ -1,0 +1,8 @@
+[Estudiante1]
+Nombre=david
+Codigo=768587
+Grado=4
+Genero=Masculino
+
+[Datos]
+Cantidad=1

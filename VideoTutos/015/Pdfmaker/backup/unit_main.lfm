@@ -1,0 +1,57 @@
+object RegistrosForm: TRegistrosForm
+  Left = 426
+  Height = 240
+  Top = 164
+  Width = 728
+  Caption = 'RegistrosForm'
+  ClientHeight = 215
+  ClientWidth = 728
+  Menu = MenuPrincipal
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object lv_lista: TListView
+    Left = 0
+    Height = 215
+    Top = 0
+    Width = 728
+    Align = alClient
+    Columns = <    
+      item
+      end    
+      item
+        Caption = 'ID'
+        Width = 100
+      end    
+      item
+        Caption = 'Nombre'
+        Width = 150
+      end    
+      item
+        Caption = 'Codigo'
+        Width = 150
+      end    
+      item
+        Caption = 'Grado'
+        Width = 100
+      end    
+      item
+        Caption = 'Genero'
+        Width = 163
+      end>
+    GridLines = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object MenuPrincipal: TMainMenu
+    Left = 287
+    Top = 70
+    object Registro: TMenuItem
+      Caption = 'Registro'
+      object IngresarEstudiantesSM: TMenuItem
+        Caption = 'Ingresar Estudiantes'
+        OnClick = IngresarEstudiantesSMClick
+      end
+    end
+  end
+end
