@@ -5,4 +5,22 @@ Grado=4
 Genero=Masculino
 
 [Datos]
-Cantidad=1
+Cantidad=4
+
+[Estudiante2]
+Nombre=miguel
+Codigo=1645161
+Grado=1
+Genero=Masculino
+
+[Estudiante3]
+Nombre=ernesto
+Codigo=2165661
+Grado=2
+Genero=Masculino
+
+[Estudiante4]
+Nombre=lidia
+Codigo=254535
+Grado=5
+Genero=Femenino

@@ -1,7 +1,7 @@
 object RegistroEstudiantesForm: TRegistroEstudiantesForm
-  Left = 1205
+  Left = 1272
   Height = 417
-  Top = 190
+  Top = 167
   Width = 556
   Caption = 'Registro de Estudiantes'
   ClientHeight = 417
